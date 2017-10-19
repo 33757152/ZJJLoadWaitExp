@@ -13,6 +13,9 @@
 		891CA3841F98912B0026E5EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 891CA3831F98912B0026E5EA /* Assets.xcassets */; };
 		891CA3871F98912B0026E5EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 891CA3851F98912B0026E5EA /* LaunchScreen.storyboard */; };
 		891CA38A1F98912B0026E5EA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 891CA3891F98912B0026E5EA /* main.m */; };
+		891CA3931F9891940026E5EA /* ZJJBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891CA3921F9891930026E5EA /* ZJJBaseViewController.m */; };
+		891CA3961F9891AF0026E5EA /* ShowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 891CA3951F9891AE0026E5EA /* ShowViewController.m */; };
+		891CA39A1F9891EC0026E5EA /* ZJJWarnLabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 891CA3991F9891EC0026E5EA /* ZJJWarnLabelView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		891CA3861F98912B0026E5EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		891CA3881F98912B0026E5EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		891CA3891F98912B0026E5EA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		891CA3911F9891930026E5EA /* ZJJBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJBaseViewController.h; sourceTree = "<group>"; };
+		891CA3921F9891930026E5EA /* ZJJBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJBaseViewController.m; sourceTree = "<group>"; };
+		891CA3941F9891AE0026E5EA /* ShowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowViewController.h; sourceTree = "<group>"; };
+		891CA3951F9891AE0026E5EA /* ShowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowViewController.m; sourceTree = "<group>"; };
+		891CA3981F9891EC0026E5EA /* ZJJWarnLabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZJJWarnLabelView.h; sourceTree = "<group>"; };
+		891CA3991F9891EC0026E5EA /* ZJJWarnLabelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZJJWarnLabelView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +67,8 @@
 		891CA3791F98912B0026E5EA /* ZJJLoadWaitExp */ = {
 			isa = PBXGroup;
 			children = (
+				891CA3971F9891CE0026E5EA /* view */,
+				891CA3901F98918A0026E5EA /* class */,
 				891CA37A1F98912B0026E5EA /* AppDelegate.h */,
 				891CA37B1F98912B0026E5EA /* AppDelegate.m */,
 				891CA37D1F98912B0026E5EA /* ViewController.h */,
@@ -69,6 +80,26 @@
 				891CA3891F98912B0026E5EA /* main.m */,
 			);
 			path = ZJJLoadWaitExp;
+			sourceTree = "<group>";
+		};
+		891CA3901F98918A0026E5EA /* class */ = {
+			isa = PBXGroup;
+			children = (
+				891CA3941F9891AE0026E5EA /* ShowViewController.h */,
+				891CA3951F9891AE0026E5EA /* ShowViewController.m */,
+				891CA3911F9891930026E5EA /* ZJJBaseViewController.h */,
+				891CA3921F9891930026E5EA /* ZJJBaseViewController.m */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
+		891CA3971F9891CE0026E5EA /* view */ = {
+			isa = PBXGroup;
+			children = (
+				891CA3981F9891EC0026E5EA /* ZJJWarnLabelView.h */,
+				891CA3991F9891EC0026E5EA /* ZJJWarnLabelView.m */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -102,7 +133,7 @@
 				TargetAttributes = {
 					891CA3761F98912A0026E5EA = {
 						CreatedOnToolsVersion = 9.0.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -143,7 +174,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				891CA37F1F98912B0026E5EA /* ViewController.m in Sources */,
+				891CA3961F9891AF0026E5EA /* ShowViewController.m in Sources */,
+				891CA39A1F9891EC0026E5EA /* ZJJWarnLabelView.m in Sources */,
 				891CA38A1F98912B0026E5EA /* main.m in Sources */,
+				891CA3931F9891940026E5EA /* ZJJBaseViewController.m in Sources */,
 				891CA37C1F98912B0026E5EA /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,12 +312,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B77E2S42YJ;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZJJLoadWaitExp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.fengpu.ZJJLoadWaitExp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.it.ZJJLoadWaitExp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -292,12 +327,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B77E2S42YJ;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ZJJLoadWaitExp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.fengpu.ZJJLoadWaitExp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.it.ZJJLoadWaitExp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
